@@ -7,7 +7,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
 // const kue = require('kue');
-const cronjobs = require('./helpers/cron.js.js')
+// const cronjobs = require('./helpers/cron.js.js')
 
 // cronjobs.monthlyReport()
 
