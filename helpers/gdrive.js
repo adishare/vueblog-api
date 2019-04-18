@@ -114,25 +114,55 @@ function uploadGDrive(req, res, next) {
 module.exports = {uploadGDrive}
 
 
-// var fileMetadata = {
-//     'name': 'motorcycle.jpg',
-//     'parents':['1WUoAOs_xsRb_wddoETMLajhqlyHgF9vL'],
 
-// };
-// var media = {
-//     mimeType: 'image/jpeg',
-//     body: fs.createReadStream('motorcycle.jpg')
-// };
 
-// drive.files.create({
-//     resource: fileMetadata,
-//     media: media,
-//     fields: 'id'
-// }, function (err, response) {
-//     if (err) {
-//         console.error(err);
-//     } else {
-//         console.log('file Id: ', response.data.id);
-//         console.log('fileUrl: ', 'http://drive.google.com/uc?id='+response.data.id)
-//     }
+
+// fs.readFile('credentials.json', (err, content) => {
+//     if (err) return console.log('Error loading client secret file:', err)
+//     authorize(JSON.parse(content), logging)
 // })
+
+// /**
+//  * Create an OAuth2 client with the given credentials, and then execute the
+//  * given callback function.
+//  * @param {Object} credentials The authorization client credentials.
+//  * @param {function} callback The callback to call with the authorized client.
+//  */
+// function authorize(credentials, callback) {
+//     const {client_secret, client_id, redirect_uris} = credentials.installed
+//     const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, redirect_uris[0])
+
+//     fs.readFile(TOKEN_PATH, (err, token) => {
+//         if (err) return getAccessToken(oAuth2Client, callback);
+//         oAuth2Client.setCredentials(JSON.parse(token));
+//         callback(oAuth2Client);
+//     });
+// }
+
+// function logging(object) {
+//     console.log(object)
+// }
+
+// function getAccessToken(oAuth2Client, callback) {
+//     const authUrl = oAuth2Client.generateAuthUrl({
+//         access_type: 'offline',
+//         scope: SCOPES,
+//     });
+//     console.log('Authorize this app by visiting this url:', authUrl);
+//     const rl = readline.createInterface({
+//         input: process.stdin,
+//         output: process.stdout,
+//     });
+//     rl.question('Enter the code from that page here: ', (code) => {
+//         rl.close();
+//         oAuth2Client.getToken(code, (err, token) => {
+//             if (err) return console.error('Error retrieving access token', err);
+//             oAuth2Client.setCredentials(token);
+//             fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) => {
+//                 if (err) return console.error(err);
+//                 console.log('Token stored to', TOKEN_PATH);
+//             });
+//             callback(oAuth2Client);
+//         });
+//     });
+// }
