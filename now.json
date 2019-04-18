@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "app.js", "use": "@now/node-server" }
+  ],
+  "env": {
+    "NODE_ENV":"dev",
+    "JWTSECRET":"rahasia",
+    "GOOGLE_CLIENT_ID":"438298661866-524t9fcgs2gds2ji533eo08iodpmsm82.apps.googleusercontent.com",
+    "GOOGLE_CLIENT_SECRET":"xHnPK4bTxXVQTFqIZC_bYac3",
+    "clearbit_secret_api_key":"sk_54fd709691690db6840bd2f24b024c67",
+    "clearbit_published_api_key":"pk_d2932156813d81f686faac699baed458",
+    "CLOUD_BUCKET":"h8ikestore.adishare.online",
+    "GCLOUD_PROJECT":"h8ikestore",
+    "PROJECT_ID":"h8ikestore",
+    "KEYFILE_PATH":"'h8ikestore-f75d7bfdd17a.json'",
+    "YOUTUBE_DATA_API":"AIzaSyB14D6HhI49S1hlpYeySp0u09fHIB0DrGg",
+    "MANDRILL_API_KEY":"bUuO_mNTJKmYfbUy3eL_yw"
+  }
+}
