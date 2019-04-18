@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const ThreadController = require('../controllers/ThreadController.js.js');
-const auth = require('../middlewares/auth.js.js')
+const ThreadController = require('../controllers/ThreadController.js');
+const auth = require('../middlewares/auth.js')
 
 router.post('/', auth.isLogin, ThreadController.create);
 router.get('/', ThreadController.list);

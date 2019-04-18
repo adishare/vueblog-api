@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const UserController = require('../controllers/UserController.js.js');
-const Auth = require('../middlewares/auth.js.js')
+const UserController = require('../controllers/UserController.js');
+const Auth = require('../middlewares/auth.js')
 
 // baseUrl/users , isLogin -------------- //
 

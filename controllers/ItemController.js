@@ -1,4 +1,4 @@
-const ItemModel = require('../models/ItemModel.js.js')
+const ItemModel = require('../models/ItemModel.js')
 
 module.exports = ItemController = {
 

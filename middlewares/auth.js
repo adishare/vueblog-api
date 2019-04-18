@@ -1,10 +1,10 @@
-const UserModel = require('../models/UserModel.js.js')
+const UserModel = require('../models/UserModel.js')
 const jwt = require('jsonwebtoken')
 const axios = require('axios')
-const ArticleModel = require('../models/ArticleModel.js.js')
-const ThreadModel = require('../models/ThreadModel.js.js')
-const CommentModel = require('../models/CommentModel.js.js')
-const AnswerModel = require('../models/AnswerModel.js.js')
+const ArticleModel = require('../models/ArticleModel.js')
+const ThreadModel = require('../models/ThreadModel.js')
+const CommentModel = require('../models/CommentModel.js')
+const AnswerModel = require('../models/AnswerModel.js')
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
 const { OAuth2Client } = require('google-auth-library')

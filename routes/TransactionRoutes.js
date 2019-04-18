@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const TransactionController = require('../controllers/TransactionController.js.js');
-const isValidStock = require('../middlewares/validStock.js.js').isValidStock
-const { isAdmin, isCustomer } = require('../middlewares/auth.js.js')
+const TransactionController = require('../controllers/TransactionController.js');
+const isValidStock = require('../middlewares/validStock.js').isValidStock
+const { isAdmin, isCustomer } = require('../middlewares/auth.js')
 
 router.post('/', isCustomer, isValidStock, TransactionController.create);
 router.get('/', TransactionController.show);

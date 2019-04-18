@@ -1,5 +1,5 @@
-const SubscribeModel = require('../models/SubscribeMode.js.js')
-nodeMailer = require('../helpers/nodeMailer.js.js')
+const SubscribeModel = require('../models/SubscribeMode.js')
+nodeMailer = require('../helpers/nodeMailer.js')
 
 module.exports = {
 

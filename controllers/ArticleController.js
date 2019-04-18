@@ -1,4 +1,4 @@
-const ArticleModel = require('../models/ArticleModel.js.js');
+const ArticleModel = require('../models/ArticleModel.js');
 
 const ArticleController = {
 

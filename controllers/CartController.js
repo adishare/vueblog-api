@@ -1,4 +1,4 @@
-const CartModel = require('../models/CartModel.js.js');
+const CartModel = require('../models/CartModel.js');
 
 module.exports = {
 

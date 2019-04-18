@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const CommentController = require('../controllers/CommentController.js.js');
-const Auth = require('../middlewares/auth.js.js')
+const CommentController = require('../controllers/CommentController.js');
+const Auth = require('../middlewares/auth.js')
 
 router.get('/:articleId', CommentController.list)
 router.post('/:articleId', Auth.isLogin, CommentController.create);

@@ -7,7 +7,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
 // const kue = require('kue');
-// const cronjobs = require('./helpers/cron.js.js')
+// const cronjobs = require('./helpers/cron.js')
 
 // cronjobs.monthlyReport()
 
@@ -21,7 +21,7 @@ if(process.env.NODE_ENV == 'test') {
 mongoose.connection.on("error", console.error.bind(console, "MongoDB connection error"))
 mongoose.connection.once("open", ()=> {console.log("MongoDB Connected!")})
 
-const indexRoutes = require('./routes/index.js.js')
+const indexRoutes = require('./routes/index.js')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

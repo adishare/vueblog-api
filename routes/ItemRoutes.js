@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const ItemController = require('../controllers/ItemController.js.js')
-const { isAdmin,isLogin } = require('../middlewares/auth.js.js')
+const ItemController = require('../controllers/ItemController.js')
+const { isAdmin,isLogin } = require('../middlewares/auth.js')
 
 router.get('/', ItemController.list)
 router.post('/', isLogin, isAdmin, ItemController.create)

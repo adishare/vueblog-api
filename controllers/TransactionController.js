@@ -1,6 +1,6 @@
-const TransactionModel = require('../models/TransactionModel.js.js');
-const ItemModel = require('../models/ItemModel.js.js')
-const CartModel = require('../models/CartModel.js.js')
+const TransactionModel = require('../models/TransactionModel.js');
+const ItemModel = require('../models/ItemModel.js')
+const CartModel = require('../models/CartModel.js')
 
 
 module.exports = {

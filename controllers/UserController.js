@@ -1,6 +1,6 @@
-const UserModel = require('../models/UserModel.js.js');
-const helpers = require('../helpers/helpers.js.js');
-const CartModel = require('../models/CartModel.js.js');
+const UserModel = require('../models/UserModel.js');
+const helpers = require('../helpers/helpers.js');
+const CartModel = require('../models/CartModel.js');
 
 const UserController = {
 

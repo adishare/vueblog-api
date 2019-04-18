@@ -1,5 +1,5 @@
-const ThreadModel = require('../models/ThreadModel.js.js');
-const UserModel = require('../models/UserModel.js.js')
+const ThreadModel = require('../models/ThreadModel.js');
+const UserModel = require('../models/UserModel.js')
 
 const ThreadController = {
 

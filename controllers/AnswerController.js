@@ -1,5 +1,5 @@
-const AnswerModel = require('../models/AnswerModel.js.js');
-const ThreadModel = require('../models/ThreadModel.js.js');
+const AnswerModel = require('../models/AnswerModel.js');
+const ThreadModel = require('../models/ThreadModel.js');
 
 module.exports = {
 

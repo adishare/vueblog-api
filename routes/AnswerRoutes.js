@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const AnswerController = require('../controllers/AnswerController.js.js');
-const Auth = require('../middlewares/auth.js.js')
+const AnswerController = require('../controllers/AnswerController.js');
+const Auth = require('../middlewares/auth.js')
 
 router.get('/:threadId', AnswerController.list);
 router.post('/:threadId', Auth.isLogin, AnswerController.create);

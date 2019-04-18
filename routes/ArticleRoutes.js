@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const ArticleController = require('../controllers/ArticleController.js.js');
-const Auth = require('../middlewares/auth.js.js')
+const ArticleController = require('../controllers/ArticleController.js');
+const Auth = require('../middlewares/auth.js')
 
 // /articles
 router.post('/', Auth.isLogin, ArticleController.create);

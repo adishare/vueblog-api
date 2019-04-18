@@ -1,5 +1,5 @@
-const CommentModel = require('../models/CommentModel.js.js');
-const ArticleModel = require('../models/ArticleModel.js.js');
+const CommentModel = require('../models/CommentModel.js');
+const ArticleModel = require('../models/ArticleModel.js');
 
 module.exports = {
 
